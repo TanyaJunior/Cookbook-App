@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Navbar from './components/Navbar'
+import Header from "./components/Header";
+import Categories from "./components/Categories";
+import Meal from './components/Meals'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <Header />
+    <Categories/>
+    <Meal />
   </React.StrictMode>
 );
 

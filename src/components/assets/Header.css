@@ -1,0 +1,55 @@
+.image-container {
+
+  width: 98vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover entire container */
+}
+.image-container-paragraph h1{
+ text-align: center;
+}
+
+.image-container-paragraph p{
+  text-align: center;
+}
+.image-container-paragraph{
+  font-style: italic;
+ justify-content: center;
+ padding: 0px 30px 0px 30px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 414px) {
+  /* iPhone SE 1st generation and similar-sized devices */
+  .image-container {
+    height: 40vh;
+  }
+
+  .image-container-paragraph h1,
+  .image-container-paragraph p {
+    padding: 0 10px;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  /* iPhone 6/7/8 and similar-sized devices */
+  .image-container {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* Smaller Android devices */
+  .image-container {
+    height: 30vh;
+  }
+}
