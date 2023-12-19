@@ -6,7 +6,7 @@ const Header = () => {
     <div className="image-container">
        <img
         src={backgroundImage}
-        alt="Centered Image"
+        alt="background"
       />
       <div className="image-container-paragraph">
         <h1>RECIPE BOOK</h1>
